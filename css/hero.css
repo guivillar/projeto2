@@ -1,0 +1,70 @@
+@media (min-width: 360px){
+    .hero{
+        background: transparent radial-gradient(closest-side at 96% 11%, #2C2C2C 0%, #1A1A1A 100%) 0% 0% no-repeat padding-box;
+    }
+
+    .div-hero{
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo-hero{
+        max-width: 50px;
+        margin-top: 15px;
+    }
+
+    .div-texto-hero{
+        text-align: center;
+    }
+
+    .titulo-hero{
+        text-transform: capitalize;
+        margin: 0 20px;
+        font-weight: 100;
+    }
+
+    .hero .div-texto-hero .body-1{
+        margin: 30px 20px 0 20px;
+        line-height: 26px;
+    }
+
+    .hero .div-hero .div-botoes-hero{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 45px 0;
+    }
+
+    .hero .div-hero .div-botoes-hero .btn{
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 1200px){
+    .logo-hero{
+        max-width: 115px;
+        margin-top: 15px;
+        margin-left: -90px;
+    }
+
+    .div-texto-hero{
+        margin: 50px 260px;
+    }
+
+    .hero .div-texto-hero .body-1{
+        margin: 30px 130px 0 130px;
+    }
+
+    .hero .div-hero .div-botoes-hero{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 150px;
+    }
+
+    .hero .div-hero .div-botoes-hero .btn, .btn-sfundo{
+        margin: 0 15px;
+    }
+}
