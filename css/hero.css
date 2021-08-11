@@ -1,8 +1,4 @@
 @media (min-width: 360px){
-    .hero{
-        background: transparent radial-gradient(closest-side at 96% 11%, #2C2C2C 0%, #1A1A1A 100%) 0% 0% no-repeat padding-box;
-    }
-
     .div-hero{
         margin-top: 15px;
         display: flex;

@@ -3,6 +3,15 @@ body{
     font-family: "Yantramanav";
 }
 
+.borda-laranja{
+    border: 1px solid #FEC024;
+    border-top: 0;
+}
+
+.fundo-gradiente{
+    background: radial-gradient(circle at 100% 0%, #2C2C2C 0%, #1A1A1A 100%);
+}
+
 @media (min-width: 360px){
     .container{
         margin: 0 15px;
