@@ -3,81 +3,89 @@ body{
     font-family: "Yantramanav";
 }
 
-@media (min-width: 360px){
-    .container{
-        margin: 0 15px;
-    }
-
-    .titulo-h1{
-        font-size: calc(54px * 12/16);
-        color: white;
-    }
-    
-    .titulo-h2{
-        font-size: calc(46px * 12/16);
-        color: white;
-    }
-    
-    .titulo-h3{
-        font-size: calc(32px * 12/16);
-        color: white;
-    }
-    
-    .titulo-h4{
-        font-size: calc(24px * 12/16);
-        color: white;
-    }
-    
-    .subtitulo-1{
-        font-size: calc(32px * 12/16);
-        color: #F89D24;
-    }
-    
-    .subtitulo-2{
-        font-size: calc(24px * 12/16);
-        color: #F89D24;
-    }
-    
-    .subtitulo-3{
-        font-size: calc(14px * 12/16);
-        color: #F89D24;
-    }
-
-    .body-1{
-        font-size: calc(18px * 12/16);
-        color: #b5b5b5;
-    }
-    
-    .body-2{
-        font-size: calc(16px * 12/16);
-        color: #b5b5b5;
-        font-weight: bold;
-    }
-
-    .btn-sfundo{
-        color: white;
-        text-transform: uppercase;
-        border: white solid 1px;
-        border-radius: 4px;
-        background: none;
-        font-size: calc(18px * 12/16);
-        font-weight: bold;
-        width: 169px;
-        height: 56px;
-    }
-
-    .btn{
-        color: white;
-        text-transform: uppercase;
-        border: #F89D24 solid 1px;
-        border-radius: 4px;
-        background: #F89D24;
-        font-size: calc(18px * 12/16);
-        font-weight: bold;
-        width: 169px;
-        height: 56px;
-    }
+.borda-laranja{
+    border: 1px solid #FEC024;
+    border-top: 0;
 }
+
+.fundo-gradiente{
+    background: radial-gradient(circle at 100% 0%, #2C2C2C 0%, #1A1A1A 100%);
+}
+
+.container{
+    margin: 0 15px;
+}
+
+.titulo-h1{
+    font-size: calc(54px * 12/16);
+    color: white;
+}
+
+.titulo-h2{
+    font-size: calc(46px * 12/16);
+    color: white;
+}
+
+.titulo-h3{
+    font-size: calc(32px * 12/16);
+    color: white;
+}
+
+.titulo-h4{
+    font-size: calc(24px * 12/16);
+    color: white;
+}
+
+.subtitulo-1{
+    font-size: calc(32px * 12/16);
+    color: #F89D24;
+}
+
+.subtitulo-2{
+    font-size: calc(24px * 12/16);
+    color: #F89D24;
+}
+
+.subtitulo-3{
+    font-size: calc(14px * 12/16);
+    color: #F89D24;
+}
+
+.body-1{
+    font-size: calc(18px * 12/16);
+    color: #b5b5b5;
+}
+
+.body-2{
+    font-size: calc(16px * 12/16);
+    color: #b5b5b5;
+    font-weight: bold;
+}
+
+.btn-sfundo{
+    color: white;
+    text-transform: uppercase;
+    border: white solid 1px;
+    border-radius: 4px;
+    background: none;
+    font-size: calc(18px * 12/16);
+    font-weight: bold;
+    width: 169px;
+    height: 56px;
+}
+
+.btn{
+    color: white;
+    text-transform: uppercase;
+    border: #F89D24 solid 1px;
+    border-radius: 4px;
+    background: #F89D24;
+    font-size: calc(18px * 12/16);
+    font-weight: bold;
+    width: 169px;
+    height: 56px;
+}
+
 
 @media (min-width: 768px){
     .container{
