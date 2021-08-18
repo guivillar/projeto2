@@ -1,0 +1,13 @@
+.preco{
+    
+    height: 1000px;
+}
+
+.div-texto-preco{
+    background-color: #000;
+    background-image: url("../assets/Grupo\ 34.svg");
+}
+
+.div-texto-preco .texto-preco.titulo-h1{
+    text-transform: capitalize;
+}
