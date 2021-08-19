@@ -1,13 +1,74 @@
 .preco{
-    
-    height: 1000px;
+    background-color: #000;
 }
 
-.div-texto-preco{
+.div-preco{
+    background-color: #000;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+      ),
+      url("../assets/Grupo\ 34.svg");
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.div-preco .div-texto-preco{
+    padding: 20px 30px;
+}
+
+/* .div-texto-preco{
     background-color: #000;
     background-image: url("../assets/Grupo\ 34.svg");
-}
+    text-align: center;
+    padding: 20px 30px;
+    opacity: 0.8 #000;
+} */
 
 .div-texto-preco .texto-preco.titulo-h1{
     text-transform: capitalize;
+    margin: 0
+}
+
+.div-valor-preco{
+    text-align: center;
+    background-color: #F89D24;
+    padding: 60px 30px;
+}
+
+.div-valor-preco .valor-preco.titulo-h1{
+    margin: 0;
+    font-size: 48px;
+}
+
+.div-valor-preco .btn.btn-preco{
+    background-color: #fff;
+    color: #F89D24;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+@media (min-width: 1200px){
+    .div-preco{
+        flex-direction: row;
+        padding: 30px 0;
+        align-items: center;
+    }
+
+    .div-valor-preco{
+        width: 700px;
+    }
+
+    .div-preco .div-texto-preco{
+        padding: 20px 70px;
+    }
+
+    .div-texto-preco .texto-preco.titulo-h1{
+        font-size: 54px;
+    }
+
+    .div-valor-preco .valor-preco.titulo-h1{
+        font-size: 64px;
+    }
 }
