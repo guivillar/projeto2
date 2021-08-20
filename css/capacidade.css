@@ -1,0 +1,11 @@
+.capacidade .card-resumo{
+    border: none;
+}
+
+.capacidade .div-texto-card-resumo .subtitulo-2{
+    letter-spacing: 2px;
+}
+
+.capacidade .div-texto-card-resumo{
+    padding: 0;
+}
