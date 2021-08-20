@@ -7,6 +7,8 @@
         <link rel="stylesheet" href="css/common.css">
         <link rel="stylesheet" href="css/resumo-curso.css">
         <link rel="stylesheet" href="css/preco.css">
+        <link rel="stylesheet" href="css/professores.css">
+        <link rel="stylesheet" href="css/capacidade.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Yantramanav&display=swap" rel="stylesheet">
@@ -29,50 +31,56 @@
         </section>
         <section class="resumo-curso fundo-gradiente">
             <div class="div-resumo-curso container">
-                <div class="div-textos">
-                    <div class="borda-laranja div-texto-borda">
-                    </div>
-                    <div class="div-titulo-resumo">
-                        <p class="titulo-h1">Sem<br>clientes?</p>
-                        <div class="div-texto-resumo">
-                            <p class="body-2">Esta seção visa explicar resumidamente o curso.</p>
-                            <p class="body-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris vitae ultricies leo integer malesuada. Ac odio tempor</p>
+                <div class="div-titulos-cards">
+                    <div class="div-textos">
+                        <div class="borda-laranja div-texto-borda">
+                        </div>
+                        <div class="div-titulo-resumo">
+                            <p class="titulo-h1">Sem<br>clientes?</p>
+                            <div class="div-texto-resumo">
+                                <p class="body-2">Esta seção visa explicar resumidamente o curso.</p>
+                                <p class="body-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris vitae ultricies leo integer malesuada. Ac odio tempor</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="div-card-resumo">
-                    <div class="card-resumo">
-                        <img class="img-card-resumo" src="assets/Oratória Digital Logo.png">
-                        <div class="div-texto-card-resumo">
-                            <p class="subtitulo-2">Objetivo</p>
-                            <p class="conteudo-card-resumo body-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                    <div class="div-card-resumo">
+                        <div class="card-resumo">
+                            <img class="img-card-resumo" src="assets/Oratória Digital Logo.png">
+                            <div class="div-texto-card-resumo">
+                                <p class="subtitulo-2">Objetivo</p>
+                                <p class="conteudo-card-resumo body-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card-resumo">
-                        <img class="img-card-resumo" src="assets/Oratória Digital Logo.png">
-                        <div class="div-texto-card-resumo">
-                            <p class="subtitulo-2">Metodologia</p>
-                            <p class="conteudo-card-resumo body-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                        <div class="card-resumo">
+                            <img class="img-card-resumo" src="assets/Oratória Digital Logo.png">
+                            <div class="div-texto-card-resumo">
+                                <p class="subtitulo-2">Metodologia</p>
+                                <p class="conteudo-card-resumo body-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card-resumo">
-                        <img class="img-card-resumo" src="assets/Oratória Digital Logo.png">
-                        <div class="div-texto-card-resumo">
-                            <p class="subtitulo-2">Metodologia</p>
-                            <p class="conteudo-card-resumo body-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                        <div class="card-resumo">
+                            <img class="img-card-resumo" src="assets/Oratória Digital Logo.png">
+                            <div class="div-texto-card-resumo">
+                                <p class="subtitulo-2">Metodologia</p>
+                                <p class="conteudo-card-resumo body-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card-resumo">
-                        <img class="img-card-resumo" src="assets/Oratória Digital Logo.png">
-                        <div class="div-texto-card-resumo">
-                            <p class="subtitulo-2">Metodologia</p>
-                            <p class="conteudo-card-resumo body-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                        <div class="card-resumo">
+                            <img class="img-card-resumo" src="assets/Oratória Digital Logo.png">
+                            <div class="div-texto-card-resumo">
+                                <p class="subtitulo-2">Metodologia</p>
+                                <p class="conteudo-card-resumo body-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="div-botoes-resumo">
                     <button id="interesse" class="btn-sfundo" href="#"> tenho interesse</button>
-                    <button id="comprar" class="btn" href="#"> comprar agora</button>
+                    <div class="div-botao-comprar">    
+                        <p class="preco-resumo body-2">R$ 5.000,00</p>
+                        <button id="comprar" class="btn" href="#"> comprar agora</button>
+                
+                    </div>
                 </div>
             </div>
         </section>
@@ -84,6 +92,62 @@
                 <div class="div-valor-preco">
                     <p class="valor-preco titulo-h1">R$ 5.000,00</p>
                     <button id="fazerCurso" class="btn btn-preco" href="#">Fazer Curso</button>
+                </div>
+            </div>
+        </section>
+        <section class="professores">
+            <div class="div-resumo-curso container">
+                <div class="div-titulos-cards">
+                    <div class="div-textos">
+                        <div class="borda-laranja div-texto-borda">
+                        </div>
+                        <div class="div-titulo-resumo">
+                            <p class="titulo-h1">Nossos<br>professores</p>
+                        </div>
+                    </div>
+                    <div class="div-card-resumo">
+                        <div class="card-resumo">
+                            <img class="img-card-resumo" src="assets/Retângulo 27@2x.png">
+                            <div class="div-texto-card-resumo">
+                                <p class="subtitulo-2">FULANO DE TAL,<br>phd em comunicação</p>
+                                <p class="conteudo-card-resumo body-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris vitae ultricies</p>
+                            </div>
+                        </div><div class="card-resumo">
+                            <img class="img-card-resumo" src="assets/Retângulo 27@2x.png">
+                            <div class="div-texto-card-resumo">
+                                <p class="subtitulo-2">FULANO DE TAL,<br>phd em comunicação</p>
+                                <p class="conteudo-card-resumo body-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris vitae ultricies</p>
+                            </div>
+                        </div><div class="card-resumo">
+                            <img class="img-card-resumo" src="assets/Retângulo 27@2x.png">
+                            <div class="div-texto-card-resumo">
+                                <p class="subtitulo-2">FULANO DE TAL,<br>phd em comunicação</p>
+                                <p class="conteudo-card-resumo body-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris vitae ultricies</p>
+                            </div>
+                        </div><div class="card-resumo">
+                            <img class="img-card-resumo" src="assets/Retângulo 27@2x.png">
+                            <div class="div-texto-card-resumo">
+                                <p class="subtitulo-2">FULANO DE TAL,<br>phd em comunicação</p>
+                                <p class="conteudo-card-resumo body-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris vitae ultricies</p>
+                            </div>
+                        </div><div class="card-resumo">
+                            <img class="img-card-resumo" src="assets/Retângulo 27@2x.png">
+                            <div class="div-texto-card-resumo">
+                                <p class="subtitulo-2">FULANO DE TAL,<br>phd em comunicação</p>
+                                <p class="conteudo-card-resumo body-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris vitae ultricies</p>
+                            </div>
+                        </div><div class="card-resumo">
+                            <img class="img-card-resumo" src="assets/Retângulo 27@2x.png">
+                            <div class="div-texto-card-resumo">
+                                <p class="subtitulo-2">FULANO DE TAL,<br>phd em comunicação</p>
+                                <p class="conteudo-card-resumo body-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris vitae ultricies</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="div-botoes-resumo">
+                    <button id="interesse" class="btn-sfundo" href="#"> tenho interesse</button>
+                    <button id="comprar" class="btn" href="#"> comprar agora</button>
                 </div>
             </div>
         </section>

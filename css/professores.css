@@ -1,0 +1,55 @@
+.professores{
+    background-color: #0C0C0C;
+}
+
+.professores .div-titulo-resumo{
+    margin-left: 29px;
+}
+
+.professores .card-resumo .img-card-resumo{
+    max-width: 220px;
+}
+
+.professores .div-texto-card-resumo .conteudo-card-resumo.body-1{
+    font-size: 12px;
+}
+
+@media (min-width: 1200px){
+    .professores .div-card-resumo{
+        max-width: 1440px;
+    }
+
+    .professores .div-titulos-cards{
+        flex-direction: column;
+    }
+
+    .professores .card-resumo{
+        max-width: 363px;
+    }
+
+    .professores .card-resumo .img-card-resumo{
+        max-width: 320px;
+    }
+
+    .professores .div-texto-card-resumo .conteudo-card-resumo.body-1{
+        font-size: 16px;
+    }
+
+    .professores .div-botoes-resumo{
+        margin: 100px 0;
+        justify-content: center;
+    }
+
+    .professores .btn-sfundo{
+        margin-left: 0;
+        margin-right: 20px;
+    }
+
+    .professores .btn{
+        margin: 0 0 0 20px;
+    }
+
+    .professores .div-titulo-resumo{
+        margin-left: 75px;
+    }
+}
