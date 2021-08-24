@@ -15,3 +15,9 @@
 .div-texto-card-resumo .conteudo-card-resumo.body-1{
     margin-bottom: 0;
 }
+
+@media (min-width: 1200px){
+    .div-botoes-resumo{
+        margin-top: 130px;
+    }
+}
