@@ -46,8 +46,8 @@
     margin-top: 50px;
 }
 
-.card-resumo .img-card-resumo{
-    max-width: 100px;
+.resumo-curso .card-resumo .img-card-resumo{
+    width: 100px;
 }
 
 .div-texto-card-resumo{
@@ -165,5 +165,71 @@
     .div-botao-comprar{
         margin-top: -18px;
     }
+}
+
+@media (min-width: 2560px){
+    .div-titulo-resumo .titulo-h1{
+        font-size: 84px;
+    }
+
+    .div-texto-borda{
+        width: 250px;
+        height: 250px;
+    }
+
+    .div-titulo-resumo{
+        top: 115px;
+        margin-left: 87px;
+    }
+
+    .div-texto-resumo .body-2{
+        font-size: 30px;
+    }
+
+    .div-texto-resumo .body-1{
+        font-size: 28px;
+        margin-right: 50px;
+    }
+
+    .resumo-curso .div-card-resumo{
+        max-width: 1115px;
+        margin-left: 260px;
+    }
+
+    .card-resumo{
+        padding: 20px 0 30px 0;
+        max-width: 460px;
+    }
+
+    .resumo-curso .card-resumo .img-card-resumo{
+        width: 215px;
+    }
+
+    .div-texto-card-resumo .subtitulo-2{
+        font-size: 28px;
+    }
+
+    .div-texto-card-resumo .conteudo-card-resumo.body-1{
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .div-resumo-curso.container .div-textos{
+        max-width: 700px;
+    }
+
+    .preco-resumo{
+        font-size: 25px;
+    }
+
+    .div-botao-comprar{
+        margin-top: -30px;
+    }
+
+    .resumo-curso .div-botoes-resumo{
+        margin-top: -80px;
+        margin-bottom: 200px;
+    }
+
 }
 

@@ -70,8 +70,7 @@ body{
     background: none;
     font-size: calc(18px * 12/16);
     font-weight: bold;
-    width: 169px;
-    height: 56px;
+    padding: 20px;
 }
 
 .btn{
@@ -82,8 +81,19 @@ body{
     background: #F89D24;
     font-size: calc(18px * 12/16);
     font-weight: bold;
-    width: 169px;
-    height: 56px;
+    padding: 20px 22px;
+}
+
+.display-none{
+    display: none;
+}
+
+.bolinha{
+    border: 1px solid #F89D24;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
 }
 
 
@@ -192,5 +202,12 @@ body{
         font-size: 16px;
         color: #b5b5b5;
         font-weight: bold;
+    }
+}
+
+@media (min-width: 2560px){
+    .btn, .btn-sfundo{
+        font-size: 30px;
+        padding: 25px 30px;
     }
 }

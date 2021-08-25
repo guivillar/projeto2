@@ -1,0 +1,57 @@
+.capacidade .card-resumo{
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.capacidade .div-texto-card-resumo .subtitulo-2{
+    letter-spacing: 2px;
+}
+
+.capacidade .div-texto-card-resumo{
+    padding: 0;
+}
+
+.div-texto-card-resumo .conteudo-card-resumo.body-1{
+    margin-bottom: 0;
+}
+
+.capacidade .div-texto-card-resumo .conteudo-card-resumo.body-1{
+    margin-left: 20px;
+}
+
+@media (min-width: 1200px){
+    .div-botoes-resumo{
+        margin-top: 130px;
+    }
+
+    .capacidade .div-card-resumo{
+        max-width: 600px;
+        margin-top: 175px;
+        margin-left: 200px;
+    }
+
+    .capacidade .card-resumo{
+        max-width: 600px;
+    }
+
+    .capacidade .div-botoes-resumo{
+        margin-top: 20px;
+        margin-bottom: 130px;
+    }
+}
+
+@media (min-width: 2560px){
+    .div-texto-resumo .body-1{
+        line-height: 40px
+    }
+
+    .capacidade .div-card-resumo{
+        max-width: 1000px;
+        justify-content: flex-start;
+    }
+
+    .capacidade .card-resumo{
+        max-width: 1000px;
+    }
+}
