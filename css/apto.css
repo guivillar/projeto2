@@ -1,0 +1,26 @@
+.apto.fundo-gradiente{
+    background-image: url("../assets/negociando.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000;
+    background-position: left;
+}
+
+@media (min-width: 1200px){
+    .apto.fundo-gradiente{
+        background-size: contain;
+        background-color: #2c2c2c;
+    }
+
+    .apto .div-resumo-curso{
+        align-items: flex-end;
+    }
+
+    .apto .div-texto-borda{
+        margin-left: 237px;
+    }
+
+    .apto .div-titulo-resumo{
+        margin-left: 45px;
+    }
+}
