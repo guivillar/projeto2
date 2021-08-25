@@ -90,6 +90,14 @@ body{
     display: none;
 }
 
+.bolinha{
+    border: 1px solid #F89D24;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+}
+
 
 @media (min-width: 768px){
     .container{

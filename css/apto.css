@@ -6,6 +6,13 @@
     background-position: left;
 }
 
+.div-titulo-card-apto{
+    display: flex;
+    align-items: baseline;
+}
+
+
+
 @media (min-width: 1200px){
     .apto.fundo-gradiente{
         background-size: contain;
