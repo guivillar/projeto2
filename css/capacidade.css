@@ -40,3 +40,18 @@
         margin-bottom: 130px;
     }
 }
+
+@media (min-width: 2560px){
+    .div-texto-resumo .body-1{
+        line-height: 40px
+    }
+
+    .capacidade .div-card-resumo{
+        max-width: 1000px;
+        justify-content: flex-start;
+    }
+
+    .capacidade .card-resumo{
+        max-width: 1000px;
+    }
+}

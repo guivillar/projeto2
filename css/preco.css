@@ -18,14 +18,6 @@
     padding: 20px 30px;
 }
 
-/* .div-texto-preco{
-    background-color: #000;
-    background-image: url("../assets/Grupo\ 34.svg");
-    text-align: center;
-    padding: 20px 30px;
-    opacity: 0.8 #000;
-} */
-
 .div-texto-preco .texto-preco.titulo-h1{
     text-transform: capitalize;
     margin: 0
@@ -70,5 +62,30 @@
 
     .div-valor-preco .valor-preco.titulo-h1{
         font-size: 64px;
+    }
+}
+
+@media (min-width: 2560px){
+    .div-preco{
+        padding: 80px 0;
+    }
+
+    .div-texto-preco .texto-preco.titulo-h1{
+        font-size: 105px;
+    }
+
+    .div-valor-preco{
+        width: 1300px;
+        padding: 60px 15px;
+    }
+
+    .div-valor-preco .valor-preco.titulo-h1{
+        font-size: 105px;
+    }
+
+    .div-valor-preco .btn.btn-preco{
+        margin-top: 60px;
+        font-size: 30px;
+        padding: 20px 40px; 
     }
 }

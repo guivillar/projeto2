@@ -31,3 +31,21 @@
         margin-left: 45px;
     }
 }
+
+@media (min-width: 2560px){
+    .apto .div-titulos-cards{
+        margin-right: 38px;
+    }
+
+    .apto .div-texto-borda{
+        margin-left: 305px;
+    }
+
+    .footer-texto-1.body-2{
+        font-size: 30px;
+    }
+
+    .footer-texto-3.body-1{
+        font-size: 30px;
+    }
+}

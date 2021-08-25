@@ -63,3 +63,22 @@
         margin: 0 15px;
     }
 }
+
+@media (min-width: 2560px){
+    .hero .titulo-h1{
+        font-size: 105px;
+    }
+
+    .hero .body-1{
+        font-size: 34px;
+    }
+
+    .hero .div-texto-hero .body-1{
+        margin: 30px 500px 0 500px;
+        line-height: 40px;
+    }
+
+    .logo-hero{
+        max-width: 160px;
+    }
+}
