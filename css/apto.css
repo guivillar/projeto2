@@ -30,6 +30,10 @@
     .apto .div-titulo-resumo{
         margin-left: 45px;
     }
+
+    .apto .div-botoes-resumo{
+        margin-right: -40px;
+    }
 }
 
 @media (min-width: 2560px){
@@ -47,5 +51,9 @@
 
     .footer-texto-3.body-1{
         font-size: 30px;
+    }
+
+    .apto .div-botoes-resumo{
+        margin-right: 0;
     }
 }

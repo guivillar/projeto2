@@ -3,6 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css"/>
         <link rel="stylesheet" href="css/hero.css">
         <link rel="stylesheet" href="css/common.css">
         <link rel="stylesheet" href="css/resumo-curso.css">
@@ -11,67 +13,138 @@
         <link rel="stylesheet" href="css/capacidade.css">
         <link rel="stylesheet" href="css/apto.css">
         <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/carousel.css">
+        <link rel="stylesheet" href="css/popup.css">
+        <link rel="stylesheet" href="css/competencia.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Yantramanav&display=swap" rel="stylesheet">
     </head>
     <body>
-        <section class="hero fundo-gradiente">
+        <div class="lp">
+            <section class="hero fundo-gradiente">
             <div class="div-hero container">
                 <div class="div-logo-hero">
-                    <img class="logo-hero" src="assets/LOGOSYNAPSE_simbolo_laranja.png">
+                    <a href="#"><img class="logo-hero" src="assets/LOGOSYNAPSE_simbolo_laranja.png"></a>
                 </div>
                 <div class="div-texto-hero">
                     <h1 class="titulo-h1 titulo-hero">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
                     <p class="body-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
                 </div>
                 <div class="div-botoes-hero">
-                    <button id="interesse" class="btn-sfundo" href="#"> tenho interesse</button>
-                    <button id="comprar" class="btn" href="#"> comprar agora</button>
+                    <button onclick="openPopup()" id="interesse-hero" class="btn-sfundo" href="#"> tenho interesse</button>
+                    <button onclick="openPopup()" id="comprar-hero" class="btn" href="#"> comprar agora</button>
                 </div>
             </div>
-        </section>
-        <section class="resumo-curso fundo-gradiente">
-            <div class="div-resumo-curso container">
-                <div class="div-titulos-cards">
-                    <div class="div-textos">
-                        <div class="borda-laranja div-texto-borda">
+            </section>
+            <section class="resumo-curso fundo-gradiente">
+                <div class="div-resumo-curso container">
+                    <div class="div-titulos-cards">
+                        <div class="div-textos">
+                            <div class="borda-laranja div-texto-borda">
+                            </div>
+                            <div class="div-titulo-resumo">
+                                <p class="titulo-h1">Sem<br>clientes?</p>
+                                <div class="div-texto-resumo">
+                                    <p class="body-2">Esta seção visa explicar resumidamente o curso.</p>
+                                    <p class="body-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris vitae ultricies leo integer malesuada. Ac odio tempor</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="div-titulo-resumo">
-                            <p class="titulo-h1">Sem<br>clientes?</p>
-                            <div class="div-texto-resumo">
-                                <p class="body-2">Esta seção visa explicar resumidamente o curso.</p>
-                                <p class="body-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris vitae ultricies leo integer malesuada. Ac odio tempor</p>
+                        <div class="div-card-resumo">
+                            <div class="card-resumo">
+                                <img class="img-card-resumo" src="assets/Oratória Digital Logo.png">
+                                <div class="div-texto-card-resumo">
+                                    <p class="subtitulo-2">Objetivo</p>
+                                    <p class="conteudo-card-resumo body-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                                </div>
+                            </div>
+                            <div class="card-resumo">
+                                <img class="img-card-resumo" src="assets/Oratória Digital Logo.png">
+                                <div class="div-texto-card-resumo">
+                                    <p class="subtitulo-2">Metodologia</p>
+                                    <p class="conteudo-card-resumo body-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                                </div>
+                            </div>
+                            <div class="card-resumo">
+                                <img class="img-card-resumo" src="assets/Oratória Digital Logo.png">
+                                <div class="div-texto-card-resumo">
+                                    <p class="subtitulo-2">Metodologia</p>
+                                    <p class="conteudo-card-resumo body-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                                </div>
+                            </div>
+                            <div class="card-resumo">
+                                <img class="img-card-resumo" src="assets/Oratória Digital Logo.png">
+                                <div class="div-texto-card-resumo">
+                                    <p class="subtitulo-2">Metodologia</p>
+                                    <p class="conteudo-card-resumo body-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="div-card-resumo">
-                        <div class="card-resumo">
-                            <img class="img-card-resumo" src="assets/Oratória Digital Logo.png">
-                            <div class="div-texto-card-resumo">
-                                <p class="subtitulo-2">Objetivo</p>
-                                <p class="conteudo-card-resumo body-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                    <div class="div-botoes-resumo">
+                        <button onclick="openPopup()" id="interesse-resumo" class="btn-sfundo" href="#"> tenho interesse</button>
+                        <div class="div-botao-comprar">    
+                            <p class="preco-resumo body-2">R$ 5.000,00</p>
+                            <button onclick="openPopup()" id="comprar-resumo" class="btn" href="#"> comprar agora</button>
+                    
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="preco">
+                <div class="div-preco">
+                    <div class="div-texto-preco">
+                        <p class="texto-preco titulo-h1">Chegou a sua hora de brilhar lorem ipsum dolor sit amet</p>
+                    </div>
+                    <div class="div-valor-preco">
+                        <p class="valor-preco titulo-h1">R$ 5.000,00</p>
+                        <button onclick="openPopup()" id="fazerCurso" class="btn btn-preco" href="#">Fazer Curso</button>
+                    </div>
+                </div>
+            </section>
+            <section class="competencia">
+                <div class="div-resumo-curso container">
+                    <div class="div-titulos-cards">
+                        <div class="div-textos">
+                            <div class="borda-laranja div-texto-borda">
+                            </div>
+                            <div class="div-titulo-resumo">
+                                <p class="titulo-h1">O que você<br>Aprenderá</p>
                             </div>
                         </div>
-                        <div class="card-resumo">
-                            <img class="img-card-resumo" src="assets/Oratória Digital Logo.png">
-                            <div class="div-texto-card-resumo">
-                                <p class="subtitulo-2">Metodologia</p>
-                                <p class="conteudo-card-resumo body-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                        <div class="div-card-resumo">
+                            <div class="div-title-competencia">
+                                <p class="body-1">Competência 1</p>
+                                <div onclick="closeCompetencia('1')" id="setaUp1" class="seta-up"></div>
+                                <div onclick="openCompetencia('1')" id="setaDown1" class="seta-down"></div>
                             </div>
-                        </div>
-                        <div class="card-resumo">
-                            <img class="img-card-resumo" src="assets/Oratória Digital Logo.png">
-                            <div class="div-texto-card-resumo">
-                                <p class="subtitulo-2">Metodologia</p>
-                                <p class="conteudo-card-resumo body-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                            <div id="competencia1" class="div-conteudo-competencia">
+                                <p class="body-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet.</p>
                             </div>
-                        </div>
-                        <div class="card-resumo">
-                            <img class="img-card-resumo" src="assets/Oratória Digital Logo.png">
-                            <div class="div-texto-card-resumo">
-                                <p class="subtitulo-2">Metodologia</p>
-                                <p class="conteudo-card-resumo body-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                            <div class="div-title-competencia">
+                                <p class="body-1">Competência 2</p>
+                                <div onclick="closeCompetencia('2')" id="setaUp2" class="seta-up"></div>
+                                <div onclick="openCompetencia('2')" id="setaDown2" class="seta-down"></div>
+                            </div>
+                            <div id="competencia2" class="div-conteudo-competencia">
+                                <p class="body-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet.</p>
+                            </div>
+                            <div class="div-title-competencia">
+                                <p class="body-1">Competência 3</p>
+                                <div onclick="closeCompetencia('3')" id="setaUp3" class="seta-up"></div>
+                                <div onclick="openCompetencia('3')" id="setaDown3" class="seta-down"></div>
+                            </div>
+                            <div id="competencia3" class="div-conteudo-competencia">
+                                <p class="body-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet.</p>
+                            </div>
+                            <div class="div-title-competencia">
+                                <p class="body-1">Competência 4</p>
+                                <div onclick="closeCompetencia('4')" id="setaUp4" class="seta-up"></div>
+                                <div onclick="openCompetencia('4')" id="setaDown4" class="seta-down"></div>
+                            </div>
+                            <div id="competencia4" class="div-conteudo-competencia">
+                                <p class="body-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet.</p>
                             </div>
                         </div>
                     </div>
@@ -83,166 +156,257 @@
                         <button id="comprar" class="btn" href="#"> comprar agora</button>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="preco">
-            <div class="div-preco">
-                <div class="div-texto-preco">
-                    <p class="texto-preco titulo-h1">Chegou a sua hora de brilhar lorem ipsum dolor sit amet</p>
-                </div>
-                <div class="div-valor-preco">
-                    <p class="valor-preco titulo-h1">R$ 5.000,00</p>
-                    <button id="fazerCurso" class="btn btn-preco" href="#">Fazer Curso</button>
-                </div>
-            </div>
-        </section>
-        <section class="professores">
-            <div class="div-resumo-curso container">
-                <div class="div-titulos-cards">
-                    <div class="div-textos">
-                        <div class="borda-laranja div-texto-borda">
+                <div class="div-competencia-desk container">
+                    <div class="div-bloco-competencia-desk">
+                        <div onclick="competenciaDesk('1')" id="competenciaDesk1" class="selection-competencia title-competencia-desk">
+                            <p id="title1" class="body-1">Competência 1</p>
                         </div>
-                        <div class="div-titulo-resumo">
-                            <p class="titulo-h1">Nossos<br>professores</p>
+                        <div onclick="competenciaDesk('2')" id="competenciaDesk2" class="title-competencia-desk">
+                            <p id="title2" class="body-1">Competência 2</p>
+                        </div>
+                        <div onclick="competenciaDesk('3')" id="competenciaDesk3" class="title-competencia-desk">
+                            <p id="title3" class="body-1">Competência 3</p>
+                        </div>
+                        <div onclick="competenciaDesk('4')" id="competenciaDesk4" class="title-competencia-desk">
+                            <p id="title4" class="body-1">Competência 4</p>
                         </div>
                     </div>
-                    <div class="div-card-resumo">
-                        <div class="card-resumo">
-                            <img class="img-card-resumo" src="assets/Retângulo 27@2x.png">
-                            <div class="div-texto-card-resumo">
-                                <p class="subtitulo-2">FULANO DE TAL,<br>phd em comunicação</p>
-                                <p class="conteudo-card-resumo body-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris vitae ultricies</p>
+                    <div class="div-conteudo-competencia-desk">
+                        <div id="conteudoCompetencia1" class="conteudo-competencia-desk">
+                            <p class="body-1">
+                                <span class="body-2">Esta seção visa explicar as competências que os alunos possuirão uma vez que concluírem o curso.</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris. 1
+                            </p>
+                            <div class="div-btn-competencia-desk">
+                                <a onclick="openPopup()" href="#" class="titulo-h4">tenho interesse</a>
+                                <a onclick="openPopup()" href="#" class="subtitulo-2">compre agora</a>
                             </div>
                         </div>
-                        <div class="card-resumo">
-                            <img class="img-card-resumo" src="assets/Retângulo 27@2x.png">
-                            <div class="div-texto-card-resumo">
-                                <p class="subtitulo-2">FULANO DE TAL,<br>phd em comunicação</p>
-                                <p class="conteudo-card-resumo body-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris vitae ultricies</p>
+                        <div id="conteudoCompetencia2" class="conteudo-competencia-desk display-none">
+                            <p class="body-1">
+                                <span class="body-2">Esta seção visa explicar as competências que os alunos possuirão uma vez que concluírem o curso.</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris. 2
+                            </p>
+                            <div class="div-btn-competencia-desk">
+                                <a onclick="openPopup()" href="#" class="titulo-h4">tenho interesse</a>
+                                <a onclick="openPopup()" href="#" class="subtitulo-2">compre agora</a>
                             </div>
                         </div>
-                        <div class="card-resumo">
-                            <img class="img-card-resumo" src="assets/Retângulo 27@2x.png">
-                            <div class="div-texto-card-resumo">
-                                <p class="subtitulo-2">FULANO DE TAL,<br>phd em comunicação</p>
-                                <p class="conteudo-card-resumo body-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris vitae ultricies</p>
+                        <div id="conteudoCompetencia3" class="conteudo-competencia-desk display-none">
+                            <p class="body-1">
+                                <span class="body-2">Esta seção visa explicar as competências que os alunos possuirão uma vez que concluírem o curso.</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris. 3
+                            </p>
+                            <div class="div-btn-competencia-desk">
+                                <a onclick="openPopup()" href="#" class="titulo-h4">tenho interesse</a>
+                                <a onclick="openPopup()" href="#" class="subtitulo-2">compre agora</a>
                             </div>
                         </div>
-                        <div class="card-resumo display-none">
-                            <img class="img-card-resumo" src="assets/Retângulo 27@2x.png">
-                            <div class="div-texto-card-resumo">
-                                <p class="subtitulo-2">FULANO DE TAL,<br>phd em comunicação</p>
-                                <p class="conteudo-card-resumo body-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris vitae ultricies</p>
-                            </div>
-                        </div>
-                        <div class="card-resumo display-none">
-                            <img class="img-card-resumo" src="assets/Retângulo 27@2x.png">
-                            <div class="div-texto-card-resumo">
-                                <p class="subtitulo-2">FULANO DE TAL,<br>phd em comunicação</p>
-                                <p class="conteudo-card-resumo body-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris vitae ultricies</p>
-                            </div>
-                        </div>
-                        <div class="card-resumo display-none">
-                            <img class="img-card-resumo" src="assets/Retângulo 27@2x.png">
-                            <div class="div-texto-card-resumo">
-                                <p class="subtitulo-2">FULANO DE TAL,<br>phd em comunicação</p>
-                                <p class="conteudo-card-resumo body-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris vitae ultricies</p>
+                        <div id="conteudoCompetencia4" class="conteudo-competencia-desk display-none">
+                            <p class="body-1">
+                                <span class="body-2">Esta seção visa explicar as competências que os alunos possuirão uma vez que concluírem o curso.</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris. 4
+                            </p>
+                            <div class="div-btn-competencia-desk">
+                                <a onclick="openPopup()" href="#" class="titulo-h4">tenho interesse</a>
+                                <a onclick="openPopup()" href="#" class="subtitulo-2">compre agora</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="div-botoes-resumo">
-                    <button id="interesse" class="btn-sfundo" href="#"> tenho interesse</button>
-                    <button id="comprar" class="btn" href="#"> comprar agora</button>
-                </div>
-            </div>
-        </section>
-        <section class="capacidade fundo-gradiente">
-            <div class="div-resumo-curso container">
-                <div class="div-titulos-cards">
-                    <div class="div-textos">
-                        <div class="borda-laranja div-texto-borda">
-                        </div>
-                        <div class="div-titulo-resumo">
-                            <p class="titulo-h1">Capacidade<br>de aprender</p>
-                            <div class="div-texto-resumo">
-                                <p class="body-2">Esta seção visa explicar as metodologias de ensino empregadas.</p>
-                                <p class="body-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris vitae ultricies leo integer malesuada. Ac odio tempor</p>
+            </section>
+            <section class="professores">
+                <div class="div-resumo-curso container">
+                    <div class="div-titulos-cards">
+                        <div class="div-textos">
+                            <div class="borda-laranja div-texto-borda">
+                            </div>
+                            <div class="div-titulo-resumo">
+                                <p class="titulo-h1">Nossos<br>professores</p>
                             </div>
                         </div>
-                    </div>
-                    <div class="div-card-resumo">
-                        <div class="card-resumo">
-                            <div class="div-texto-card-resumo">
-                                <div class="div-titulo-card-apto">
-                                    <div class="bolinha"></div><p class="subtitulo-2">Metodologia 1</p>
+                        <div class="div-card-resumo">
+                            <div class="card-resumo">
+                                <img class="img-card-resumo" src="assets/Retângulo 27@2x.png">
+                                <div class="div-texto-card-resumo">
+                                    <p class="subtitulo-2">FULANO DE TAL,<br>phd em comunicação</p>
+                                    <p class="conteudo-card-resumo body-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris vitae ultricies</p>
                                 </div>
-                                <p class="conteudo-card-resumo body-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
                             </div>
-                        </div>
-                        <div class="card-resumo">
-                            <div class="div-texto-card-resumo">
-                                <div class="div-titulo-card-apto">
-                                    <div class="bolinha"></div><p class="subtitulo-2">Metodologia 1</p>
+                            <div class="card-resumo">
+                                <img class="img-card-resumo" src="assets/Retângulo 27@2x.png">
+                                <div class="div-texto-card-resumo">
+                                    <p class="subtitulo-2">FULANO DE TAL,<br>phd em comunicação</p>
+                                    <p class="conteudo-card-resumo body-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris vitae ultricies</p>
                                 </div>
-                                <p class="conteudo-card-resumo body-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
                             </div>
-                        </div>
-                        <div class="card-resumo">
-                            <div class="div-texto-card-resumo">
-                                <div class="div-titulo-card-apto">
-                                    <div class="bolinha"></div><p class="subtitulo-2">Metodologia 1</p>
+                            <div class="card-resumo">
+                                <img class="img-card-resumo" src="assets/Retângulo 27@2x.png">
+                                <div class="div-texto-card-resumo">
+                                    <p class="subtitulo-2">FULANO DE TAL,<br>phd em comunicação</p>
+                                    <p class="conteudo-card-resumo body-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris vitae ultricies</p>
                                 </div>
-                                <p class="conteudo-card-resumo body-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
                             </div>
-                        </div>
-                        <div class="card-resumo">
-                            <div class="div-texto-card-resumo">
-                                <div class="div-titulo-card-apto">
-                                    <div class="bolinha"></div><p class="subtitulo-2">Metodologia 1</p>
+                            <div class="card-resumo display-none">
+                                <img class="img-card-resumo" src="assets/Retângulo 27@2x.png">
+                                <div class="div-texto-card-resumo">
+                                    <p class="subtitulo-2">FULANO DE TAL,<br>phd em comunicação</p>
+                                    <p class="conteudo-card-resumo body-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris vitae ultricies</p>
                                 </div>
-                                <p class="conteudo-card-resumo body-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                            </div>
+                            <div class="card-resumo display-none">
+                                <img class="img-card-resumo" src="assets/Retângulo 27@2x.png">
+                                <div class="div-texto-card-resumo">
+                                    <p class="subtitulo-2">FULANO DE TAL,<br>phd em comunicação</p>
+                                    <p class="conteudo-card-resumo body-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris vitae ultricies</p>
+                                </div>
+                            </div>
+                            <div class="card-resumo display-none">
+                                <img class="img-card-resumo" src="assets/Retângulo 27@2x.png">
+                                <div class="div-texto-card-resumo">
+                                    <p class="subtitulo-2">FULANO DE TAL,<br>phd em comunicação</p>
+                                    <p class="conteudo-card-resumo body-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris vitae ultricies</p>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <div class="div-botoes-resumo">
+                        <button onclick="openPopup()" id="interesse-professores" class="btn-sfundo" href="#"> tenho interesse</button>
+                        <button onclick="openPopup()" id="comprar-professores" class="btn" href="#"> comprar agora</button>
+                    </div>
                 </div>
-                <div class="div-botoes-resumo">
-                    <button id="interesse" class="btn-sfundo" href="#"> tenho interesse</button>
-                    <button id="comprar" class="btn" href="#"> comprar agora</button>
-                </div>
-            </div>
-        </section>
-        <section class="apto fundo-gradiente">
-            <div class="div-resumo-curso container">
-                <div class="div-titulos-cards">
-                    <div class="div-textos">
-                        <div class="borda-laranja div-texto-borda">
+            </section>
+            <section class="carousel">
+                <div class="div-carousel">
+                    <div class="carousel-full container">
+                        <div class="carousel-item">
+                            <p class="opinion-text titulo-h1">"Quando eu fiz esse curso, eu fui muito feliz e eu quero fazer de novo agora porque é muito bom mesmo"</p>
+                            <p class="opinion-name subtitulo-2">fulano de tal,<br>médico muito conceituado</p>
                         </div>
-                        <div class="div-titulo-resumo">
-                            <p class="titulo-h1">Eu estou<br>apto</p>
-                            <div class="div-texto-resumo">
-                                <p class="body-2">Esta seção visa explicar as metodologias de ensino empregadas.</p>
-                                <p class="body-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris vitae ultricies leo integer malesuada. Ac odio tempor</p>
-                            </div>
+                        <div class="carousel-item">
+                            <p class="opinion-text titulo-h1">"Quando eu fiz esse curso, eu fui muito feliz e eu quero fazer de novo agora porque é muito bom mesmo"</p>
+                            <p class="opinion-name subtitulo-2">fulano de tal,<br>médico muito conceituado</p>
+                        </div>
+                        <div class="carousel-item">
+                            <p class="opinion-text titulo-h1">"Quando eu fiz esse curso, eu fui muito feliz e eu quero fazer de novo agora porque é muito bom mesmo"</p>
+                            <p class="opinion-name subtitulo-2">fulano de tal,<br>médico muito conceituado</p>
+                        </div>
+                        <div class="carousel-item">
+                            <p class="opinion-text titulo-h1">"Quando eu fiz esse curso, eu fui muito feliz e eu quero fazer de novo agora porque é muito bom mesmo"</p>
+                            <p class="opinion-name subtitulo-2">fulano de tal,<br>médico muito conceituado</p>
                         </div>
                     </div>
                 </div>
-                <div class="div-botoes-resumo">
-                    <button id="interesse" class="btn-sfundo" href="#"> tenho interesse</button>
-                    <button id="comprar" class="btn" href="#"> comprar agora</button>
+            </section>
+            <section class="capacidade fundo-gradiente">
+                <div class="div-resumo-curso container">
+                    <div class="div-titulos-cards">
+                        <div class="div-textos">
+                            <div class="borda-laranja div-texto-borda">
+                            </div>
+                            <div class="div-titulo-resumo">
+                                <p class="titulo-h1">Capacidade<br>de aprender</p>
+                                <div class="div-texto-resumo">
+                                    <p class="body-2">Esta seção visa explicar as metodologias de ensino empregadas.</p>
+                                    <p class="body-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris vitae ultricies leo integer malesuada. Ac odio tempor</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="div-card-resumo">
+                            <div class="card-resumo">
+                                <div class="div-texto-card-resumo">
+                                    <div class="div-titulo-card-apto">
+                                        <div class="bolinha"></div><p class="subtitulo-2">Metodologia 1</p>
+                                    </div>
+                                    <p class="conteudo-card-resumo body-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                                </div>
+                            </div>
+                            <div class="card-resumo">
+                                <div class="div-texto-card-resumo">
+                                    <div class="div-titulo-card-apto">
+                                        <div class="bolinha"></div><p class="subtitulo-2">Metodologia 1</p>
+                                    </div>
+                                    <p class="conteudo-card-resumo body-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                                </div>
+                            </div>
+                            <div class="card-resumo">
+                                <div class="div-texto-card-resumo">
+                                    <div class="div-titulo-card-apto">
+                                        <div class="bolinha"></div><p class="subtitulo-2">Metodologia 1</p>
+                                    </div>
+                                    <p class="conteudo-card-resumo body-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                                </div>
+                            </div>
+                            <div class="card-resumo">
+                                <div class="div-texto-card-resumo">
+                                    <div class="div-titulo-card-apto">
+                                        <div class="bolinha"></div><p class="subtitulo-2">Metodologia 1</p>
+                                    </div>
+                                    <p class="conteudo-card-resumo body-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="div-botoes-resumo">
+                        <button onclick="openPopup()" id="interesse-capacidade" class="btn-sfundo" href="#"> tenho interesse</button>
+                        <button onclick="openPopup()" id="comprar-capacidade" class="btn" href="#"> comprar agora</button>
+                    </div>
+                </div>
+            </section>
+            <section class="apto fundo-gradiente">
+                <div class="div-resumo-curso container">
+                    <div class="div-titulos-cards">
+                        <div class="div-textos">
+                            <div class="borda-laranja div-texto-borda">
+                            </div>
+                            <div class="div-titulo-resumo">
+                                <p class="titulo-h1">Eu estou<br>apto?</p>
+                                <div class="div-texto-resumo">
+                                    <p class="body-2">Esta seção visa explicar as metodologias de ensino empregadas.</p>
+                                    <p class="body-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris vitae ultricies leo integer malesuada. Ac odio tempor</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="div-botoes-resumo">
+                        <button onclick="openPopup()" id="interesse-apto" class="btn-sfundo" href="#"> tenho interesse</button>
+                        <button onclick="openPopup()" id="comprar-apto" class="btn" href="#"> comprar agora</button>
+                    </div>
+                </div>
+            </section>
+            <footer class="footer">
+                <div class="div-texto-footer">
+                    <p class="footer-texto-1 body-2">Synapse ₢ Todos os direitos reservados</p>
+                    <p class="footer-texto-2 body-2">texto adicional</p>
+                    <div class="div-texto-adicional-desk">
+                        <p class="footer-texto-3 body-1">texto adicional1</p>
+                        <p class="footer-texto-3 body-1">texto adicional2</p>
+                        <p class="footer-texto-3 body-1">texto adicional3</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <section id="popup" class="popup">
+            <div class="div-popup">
+                <div class="div-text-popup">
+                    <div class="div-close-btn">
+                        <button onclick="closePopup()" class="close-btn" id="close"><img src="assets/botao-x.png"></button>
+                    </div>
+                    <h1 class="titulo-h2">Lorem</h1>
+                    <p class="body-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                </div>
+                <div class="div-form-popup">
+                    <form class="forms-popup">
+                        <input class="form-input-popup" type="text" id="name" placeholder="Nome">
+                        <input class="form-input-popup" type="tel" id="phone" placeholder="Telefone">
+                        <input class="form-input-popup" type="email" id="email" placeholder="E-mail">
+                        <input class="form-input-popup" type="text" id="job" placeholder="Profissão">
+                        <div class="div-checkbox">
+                            <input type="checkbox" id="terms" name="terms"><span class="body-1">Li e aceito os <a class="usage-terms">termos de uso</a>.</span></input>
+                        </div>
+                        <input class="btn" type="submit" value="declarar interesse">
+                    </form>
                 </div>
             </div>
         </section>
-        <footer class="footer">
-            <div class="div-texto-footer">
-                <p class="footer-texto-1 body-2">Synapse ₢ Todos os direitos reservados</p>
-                <p class="footer-texto-2 body-2">texto adicional</p>
-                <div class="div-texto-adicional-desk">
-                    <p class="footer-texto-3 body-1">texto adicional1</p>
-                    <p class="footer-texto-3 body-1">texto adicional2</p>
-                    <p class="footer-texto-3 body-1">texto adicional3</p>
-                </div>
-            </div>
-        </footer>
+        <script type="text/javascript" src="js/jquery-3.6.0.js"></script>
+        <script type="text/javascript" src="slick-1.8.1/slick/slick.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
     </body>
 </html>

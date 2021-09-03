@@ -1,0 +1,79 @@
+.carousel{
+    background-image: url("../assets/opinion.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000;
+    background-position: left;
+    padding-bottom: 50px;
+}
+
+.carousel-full{
+    padding: 10px 10px;
+}
+
+.carousel-item{
+    text-align: center;
+}
+
+.opinion-name{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.slick-dots li.slick-active button:before{
+    color: #fff;
+    content: "―";
+    opacity: 1;
+    font-size: 30px;
+}
+
+.slick-dots li button:before{
+    color: #fff;
+    font-family: "Yantramanav";
+    font-size: 16px;
+    content: "+";
+    opacity: 0.5;
+}
+
+.slick-dots li{
+    margin: 0 10px;
+}
+
+@media (min-width: 1200px){
+    .carousel{
+        padding: 50px;
+    }
+
+    .div-carousel{
+        padding: 100px;
+        --b:1px;
+        --c:#F89D24;
+        --w:50px;
+        
+    
+        border:var(--b) solid transparent;
+        background:
+            linear-gradient(var(--c),var(--c)) bottom left,
+            linear-gradient(var(--c),var(--c)) bottom left,
+            linear-gradient(var(--c),var(--c)) top right,
+            linear-gradient(var(--c),var(--c)) top right;
+        background-size:var(--b) var(--w),var(--w) var(--b);
+        background-origin:border-box;
+        background-repeat:no-repeat;
+    }
+}
+
+@media (min-width: 2560px){
+    .carousel .titulo-h1{
+        font-size: 85px;
+    }
+
+    .carousel .opinion-name{
+        font-size: 35px;
+    }
+
+    .div-carousel{
+        --b: 3px;
+        --w: 100px;
+    }
+}

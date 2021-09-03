@@ -1,0 +1,183 @@
+.competencia{
+    background-image: url("../assets/teacher\ bnw.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000;
+    background-position: left;
+}
+
+.competencia .div-card-resumo{
+    align-items: flex-start;
+    margin-top: 85px;
+}
+
+.competencia .div-titulo-resumo .titulo-h1{
+    margin-top: 0;
+}
+
+.competencia .div-titulo-resumo{
+    top: 60px;
+    margin-left: 30px;
+}
+
+.div-title-competencia{
+    display: flex;
+    background-color: #686868;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.div-title-competencia .body-1{
+    margin: 10px;
+    color: #fff;
+}
+
+.seta-up{
+    transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);
+    border-top: 2px #fff solid;
+    border-right: 2px #fff solid;
+    opacity: 1;
+    width: 10px;
+    height: 10px;
+    margin-top: 15px;
+    margin-right: 15px;
+    display: none;
+}
+
+.seta-down{
+    transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);
+    border-bottom: 2px #fff solid;
+    border-left: 2px #fff solid;
+    opacity: 1;
+    width: 10px;
+    height: 10px;
+    margin-top: 8px;
+    margin-right: 15px;
+}
+
+.div-conteudo-competencia{
+    background-color: #262626;
+    padding: 15px;
+    display: none;
+}
+
+.div-conteudo-competencia .body-1{
+    line-height: 26px;
+    margin: 0;
+}
+
+.div-competencia-desk{
+    display: none;
+}
+
+.selection-competencia{
+    --b:2px;
+    --c:#F89D24;
+    --w:285px;
+    
+
+    border:var(--b) solid transparent;
+    background:
+        linear-gradient(var(--c),var(--c)) bottom right;
+    background-size:var(--w) var(--b);
+    background-origin:border-box;
+    background-repeat:no-repeat;
+}
+
+@media (min-width: 1200px){
+    .competencia .div-textos{
+        display: none;
+    }
+
+    .competencia .div-botoes-resumo{
+        display: none;
+    }
+
+    .competencia .div-card-resumo{
+        margin-bottom: 85px;
+        margin-left: 50px;
+    }
+
+    .competencia .div-resumo-curso{
+        display: none;
+    }
+
+    .div-competencia-desk{
+        display: flex;
+        justify-content: center;
+        padding: 100px 150px;
+    }
+
+    .div-bloco-competencia-desk{
+        display: flex;
+        flex-direction: column;
+        background-color: #686868;
+    }
+
+    .title-competencia-desk{
+        display: flex;
+        width: 350px;
+    }
+
+    .div-conteudo-competencia-desk{
+        background-color: #262626;
+    }
+
+    .title-competencia-desk .body-1{
+        font-size: 24px;
+        color: #fff;
+        margin-left: 75px;
+    }
+
+    #competenciaDesk1 .body-1{
+        color: #fff;
+        font-weight: bold;
+    }
+
+    .conteudo-competencia-desk{
+        padding: 40px 85px 0 85px;
+    }
+
+    .conteudo-competencia-desk .body-1, .body-2{
+        color: #fff;
+        font-size: 20px;
+        margin-top: 0;
+    }
+
+    .div-btn-competencia-desk{
+        display: flex;
+        justify-content: center;
+    }
+
+    .div-btn-competencia-desk .titulo-h4, .subtitulo-2{
+        font-size: 14px;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: bold;
+        margin: 0 10px;
+    }
+
+}
+
+@media (min-width: 2560px){
+    .div-competencia-desk{
+        padding: 150px 415px;
+    }
+
+    .title-competencia-desk .body-1{
+        font-size: 36px;
+    }
+
+    .conteudo-competencia-desk{
+        padding: 90px 140px 0 140px;
+    }
+
+    .conteudo-competencia-desk .body-1, .body-2{
+        font-size: 32px;
+    }
+
+    .div-btn-competencia-desk .titulo-h4, .subtitulo-2{
+        font-size: 28px;
+    }
+}
