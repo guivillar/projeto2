@@ -1,0 +1,98 @@
+.popup{
+    padding: 10px 25px;
+    display: none;
+    position: fixed;
+    z-index: 5;
+    background-color: #000000bf;
+    height: 100%;
+}
+
+.div-popup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #232323;
+}
+
+.div-text-popup{
+    text-align: center;
+}
+
+.div-text-popup .titulo-h2{
+    color: #F89D24;
+    text-transform: uppercase;
+    margin: 10px;
+}
+
+.div-text-popup .body-1{
+    margin: 0 20px;
+}
+
+.div-form-popup{
+    margin: 25px 0;
+}
+
+.forms-popup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-input-popup{
+    margin: 5px 0;
+    padding: 10px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #F89D24;
+    opacity: 1; /* Firefox */
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+color: #F89D24;
+}
+
+.div-checkbox{
+    align-self: flex-start;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.checkbox{
+    background-color: none;
+    color: #F89D24;
+}
+
+.div-close-btn{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.close-btn{
+    background: none;
+    border: none;
+    margin: 15px;
+}
+
+.div-checkbox .body-1{
+    font-weight: bold;
+}
+
+.usage-terms{
+    text-decoration: underline;
+}
+
+@media (min-width: 1200px){
+    .popup{
+        padding: 25px 450px;
+    }
+
+    .div-text-popup .body-1{
+        margin: 0 40px;
+    }
+
+    .form-input-popup{
+        width: 300px;
+    }
+    
+}
