@@ -4,6 +4,7 @@
     background-size: cover;
     background-color: #000;
     background-position: left;
+    padding-bottom: 60px;
 }
 
 .competencia .div-card-resumo{
@@ -82,6 +83,10 @@
     background-size:var(--w) var(--b);
     background-origin:border-box;
     background-repeat:no-repeat;
+}
+
+.competencia .div-botoes-resumo{
+    margin-bottom: 0;
 }
 
 @media (min-width: 1200px){

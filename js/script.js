@@ -23,13 +23,15 @@ function closePopup(){
 }
 
 var n;
+displayBlock = "block";
+displayNone = "none"
 
 function openCompetencia(n){
     switch (n){
         case '1':
-            document.getElementById("competencia1").style.display = "block";
-            document.getElementById("setaDown1").style.display = "none";
-            document.getElementById("setaUp1").style.display = "block";
+            document.getElementById("competencia1").style.display = displayBlock;
+            document.getElementById("setaDown1").style.display = displayNone;
+            document.getElementById("setaUp1").style.display = displayBlock;
             break;
         case '2':
             document.getElementById("competencia2").style.display = "block";
@@ -73,6 +75,8 @@ function closeCompetencia(n){
             document.getElementById("setaDown4").style.display = "block";
             break;
     }
+
+
 }
 
 function competenciaDesk(n){
