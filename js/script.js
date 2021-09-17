@@ -27,56 +27,58 @@ displayBlock = "block";
 displayNone = "none"
 
 function openCompetencia(n){
+        
     switch (n){
         case '1':
-            document.getElementById("competencia1").style.display = displayBlock;
-            document.getElementById("setaDown1").style.display = displayNone;
-            document.getElementById("setaUp1").style.display = displayBlock;
+            if (document.getElementById("competencia1").style.display == "block"){
+                document.getElementById("competencia1").style.display = displayNone;
+                document.getElementById("setaDown1").style.display = displayBlock;
+                document.getElementById("setaUp1").style.display = displayNone;
+            }
+            else{
+                document.getElementById("competencia1").style.display = displayBlock;
+                document.getElementById("setaDown1").style.display = displayNone;
+                document.getElementById("setaUp1").style.display = displayBlock;
+            }
             break;
         case '2':
-            document.getElementById("competencia2").style.display = "block";
-            document.getElementById("setaDown2").style.display = "none";
-            document.getElementById("setaUp2").style.display = "block";
+            if (document.getElementById("competencia2").style.display == "block"){
+                document.getElementById("competencia2").style.display = displayNone;
+                document.getElementById("setaDown2").style.display = displayBlock;
+                document.getElementById("setaUp2").style.display = displayNone;
+            }
+            else{
+                document.getElementById("competencia2").style.display = displayBlock;
+                document.getElementById("setaDown2").style.display = displayNone;
+                document.getElementById("setaUp2").style.display = displayBlock;
+            }
             break;
         case '3':
-            document.getElementById("competencia3").style.display = "block";
-            document.getElementById("setaDown3").style.display = "none";
-            document.getElementById("setaUp3").style.display = "block";
+            if (document.getElementById("competencia3").style.display == "block"){
+                document.getElementById("competencia3").style.display = displayNone;
+                document.getElementById("setaDown3").style.display = displayBlock;
+                document.getElementById("setaUp3").style.display = displayNone;
+            }
+            else{
+                document.getElementById("competencia3").style.display = displayBlock;
+                document.getElementById("setaDown3").style.display = displayNone;
+                document.getElementById("setaUp3").style.display = displayBlock;
+            }
             break;
         case '4':
-            document.getElementById("competencia4").style.display = "block";
-            document.getElementById("setaDown4").style.display = "none";
-            document.getElementById("setaUp4").style.display = "block";
+            if (document.getElementById("competencia4").style.display == "block"){
+                document.getElementById("competencia4").style.display = displayNone;
+                document.getElementById("setaDown4").style.display = displayBlock;
+                document.getElementById("setaUp4").style.display = displayNone;
+            }
+            else{
+                document.getElementById("competencia4").style.display = displayBlock;
+                document.getElementById("setaDown4").style.display = displayNone;
+                document.getElementById("setaUp4").style.display = displayBlock;
+            }
             break;
     }
     
-}
-
-function closeCompetencia(n){
-    switch (n){
-        case '1':
-            document.getElementById("competencia1").style.display = "none";
-            document.getElementById("setaUp1").style.display = "none";
-            document.getElementById("setaDown1").style.display = "block";
-            break;
-        case '2':
-            document.getElementById("competencia2").style.display = "none";
-            document.getElementById("setaUp2").style.display = "none";
-            document.getElementById("setaDown2").style.display = "block";
-            break;
-        case '3':
-            document.getElementById("competencia3").style.display = "none";
-            document.getElementById("setaUp3").style.display = "none";
-            document.getElementById("setaDown3").style.display = "block";
-            break;
-        case '4':
-            document.getElementById("competencia4").style.display = "none";
-            document.getElementById("setaUp4").style.display = "none";
-            document.getElementById("setaDown4").style.display = "block";
-            break;
-    }
-
-
 }
 
 function competenciaDesk(n){
@@ -86,10 +88,9 @@ function competenciaDesk(n){
             document.getElementById("competenciaDesk2").classList.remove("selection-competencia");
             document.getElementById("competenciaDesk3").classList.remove("selection-competencia");
             document.getElementById("competenciaDesk4").classList.remove("selection-competencia");
-            document.getElementById("title1").style.fontWeight = "bold";
-            document.getElementById("title2").style.fontWeight = "normal";
-            document.getElementById("title3").style.fontWeight = "normal";
             document.getElementById("title4").style.fontWeight = "normal";
+            document.getElementById("title3").style.fontWeight = "bold";
+            document.getElementById("title3").style.fontWeight = "normal";
             document.getElementById("conteudoCompetencia1").classList.remove("display-none");
             document.getElementById("conteudoCompetencia2").classList.add("display-none");
             document.getElementById("conteudoCompetencia3").classList.add("display-none");
@@ -103,7 +104,6 @@ function competenciaDesk(n){
             document.getElementById("title1").style.fontWeight = "normal";
             document.getElementById("title2").style.fontWeight = "bold";
             document.getElementById("title3").style.fontWeight = "normal";
-            document.getElementById("title4").style.fontWeight = "normal";
             document.getElementById("conteudoCompetencia1").classList.add("display-none");
             document.getElementById("conteudoCompetencia2").classList.remove("display-none");
             document.getElementById("conteudoCompetencia3").classList.add("display-none");
@@ -114,7 +114,6 @@ function competenciaDesk(n){
             document.getElementById("competenciaDesk2").classList.remove("selection-competencia");
             document.getElementById("competenciaDesk3").classList.add("selection-competencia");
             document.getElementById("competenciaDesk4").classList.remove("selection-competencia");
-            document.getElementById("title1").style.fontWeight = "normal";
             document.getElementById("title2").style.fontWeight = "normal";
             document.getElementById("title3").style.fontWeight = "bold";
             document.getElementById("title4").style.fontWeight = "normal";
@@ -128,10 +127,9 @@ function competenciaDesk(n){
             document.getElementById("competenciaDesk2").classList.remove("selection-competencia");
             document.getElementById("competenciaDesk3").classList.remove("selection-competencia");
             document.getElementById("competenciaDesk4").classList.add("selection-competencia");
-            document.getElementById("title1").style.fontWeight = "normal";
-            document.getElementById("title2").style.fontWeight = "normal";
             document.getElementById("title3").style.fontWeight = "normal";
             document.getElementById("title4").style.fontWeight = "bold";
+            document.getElementById("title1").style.fontWeight = "normal";
             document.getElementById("conteudoCompetencia1").classList.add("display-none");
             document.getElementById("conteudoCompetencia2").classList.add("display-none");
             document.getElementById("conteudoCompetencia3").classList.add("display-none");
